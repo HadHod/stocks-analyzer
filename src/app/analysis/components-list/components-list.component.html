@@ -1,0 +1,9 @@
+<h2>{{ country }}</h2>
+
+<ul>
+  <li *ngFor="let c of campaniesList">
+    <a>
+      [{{ c.lastUpdate }}] {{ c.name }} {{ c.exchange }}:{{ c.ticker }}
+    </a>
+  </li>
+</ul>
