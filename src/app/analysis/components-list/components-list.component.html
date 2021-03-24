@@ -2,7 +2,7 @@
 
 <ul>
   <li *ngFor="let c of campaniesList">
-    <a>
+    <a routerLink='gold'>
       [{{ c.lastUpdate }}] {{ c.name }} {{ c.exchange }}:{{ c.ticker }}
     </a>
   </li>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ComponentsListComponent } from './components-list/components-list.component';
+import { GoldComponent } from './companies/usa/gold/gold.component';
 
 const countries: Routes = [
   { path: 'poland', component: ComponentsListComponent },
@@ -10,19 +11,19 @@ const countries: Routes = [
 ];
 
 const poland: Routes = [
-  { path: 'analysis/usa/gold', component: null },
+  { path: 'poland/a', component: null },
 ];
 
 const usa: Routes = [
-  { path: 'analysis/usa/gold', component: null },
+  { path: 'usa/gold', component: GoldComponent },
 ];
 
 const germany: Routes = [
-  { path: 'analysis/usa/gold', component: null },
+  { path: 'germany/a', component: null },
 ];
 
 const uk: Routes = [
-  { path: 'analysis/usa/gold', component: null },
+  { path: 'uk/a', component: null },
 ];
 
 const routes: Routes = [
