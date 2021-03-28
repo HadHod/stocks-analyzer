@@ -22,46 +22,31 @@
     Revenue from 4Q2020
     GOLD 1206 * $1700 = 2050200
     COPPER 119000000 * $3.25 = 386750000</dd>
+  <dt>insiders</dt>
+  <dd>buying / selling</dd>
+  <dt>no. shares</dt>
+  <dd>growing / decreasing</dd>
 </dl>
 
-'2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020',
-0.22, 0.22, 0.3, 0.04, 0.04, 0.26, 0.51, 0.21, 0.14, 0.2, 0.14, 0.08, 0.12, 0.19, 0.13, 0.31,
+<div style="display: block">
+  <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [chartType]="barChartType">
+  </canvas>
+</div>
 
-Revenue
-  2020	$12,595
-  2019	$9,717
-  2018	$7,243
-  2017	$8,374
-  2016	$8,558
-  2015	$9,029
-  2014	$10,239
-  2013	$12,527
-  2012	$14,394
-  2011	$14,236
-  2010	$11,001
-  2009	$8,136
-  2008	$7,613
-  2007	$6,014
-  2006	$5,630
-  2005	$2,348
-
-  Gross profit
-  2020	$5,178
-  2019	$2,806
-  2018	$2,023
-  2017	$3,074
-  2016	$3,153
-  2015	$2,122
-  2014	$3,409
-  2013	$5,198
-  2012	$7,137
-  2011	$7,996
-  2010	$5,839
-  2009	$4,329
-  2008	$3,907
-  2007	$3,016
-  2006	$2,920
-  2005	$1,150
+<div style="display: block">
+  <canvas baseChart
+          [datasets]="barChartData2"
+          [labels]="barChartLabels2"
+          [options]="barChartOptions2"
+          [legend]="barChartLegend2"
+          [chartType]="barChartType2">
+  </canvas>
+</div>
 
   inne wykresy
   Nałożony kurs z kursem złota
