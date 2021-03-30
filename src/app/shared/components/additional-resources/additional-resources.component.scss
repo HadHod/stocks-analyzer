@@ -1,0 +1,22 @@
+.resources {
+  border: 1px solid black;
+  margin: 6px;
+  padding: 6px;
+  border-radius: 8px;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  &__resource {
+    margin-top: 8px;
+
+    &__date {
+      margin-right: 8px;
+    }
+  
+    &__comment {
+      color: grey;
+    }
+  }
+}

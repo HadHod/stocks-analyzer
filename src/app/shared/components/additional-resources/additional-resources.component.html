@@ -1,1 +1,11 @@
-<p>additional-resources works!</p>
+<div class="resources">
+  <h3>Additional Resources</h3>
+
+  <div *ngFor="let r of resources" class="resources__resource">
+    <a [href]="r.url" target="_blank">{{ r.url }}</a>
+    <div>
+      <span *ngIf="r.date" class="resources__resource__date">[{{ r.date }}]</span>
+      <span *ngIf="r.comment" class="resources__resource__comment">{{ r.comment }}</span>
+    </div>
+  </div>
+</div>

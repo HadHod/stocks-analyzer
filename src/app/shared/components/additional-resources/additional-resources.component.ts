@@ -1,4 +1,10 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+
+export interface AdditionalResource {
+  url: string;
+  date?: string;
+  comment?: string;
+}
 
 @Component({
   selector: 'app-additional-resources',
@@ -6,4 +12,6 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./additional-resources.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AdditionalResourcesComponent {}
+export class AdditionalResourcesComponent {
+  @Input() resources: AdditionalResource[];
+}

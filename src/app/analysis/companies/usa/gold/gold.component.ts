@@ -1,5 +1,6 @@
-import { Component, ChangeDetectionStrategy, ViewChild, ElementRef } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ChartTooltipModel } from 'chart.js';
+import { AdditionalResource } from 'src/app/shared/components/additional-resources/additional-resources.component';
 
 @Component({
   templateUrl: './gold.component.html',
@@ -41,5 +42,33 @@ export class GoldComponent {
   public barChartData2 = [
     { data: [2348, 5630, 6014, 7613, 8136, 11001, 14236, 14394, 12527, 10239, 9029, 8558, 8374, 7243, 9717, 12595], label: 'Revenue' },
     { data: [1150, 2920, 3016, 3907, 4329, 5839, 7996, 7137, 5198, 3409, 2122, 3153, 3074, 2023, 2806, 5178], label: 'Gross profit' },
+  ];
+
+  public additionalResources: AdditionalResource[] = [
+    {
+      url: 'https://svencarlin.com/barrick-gold-stock/',
+      date: undefined,
+      comment: 'Sven Carlin - analysis',
+    },
+    {
+      url: 'https://www.fxempire.com/forecasts/article/why-shares-of-barrick-gold-are-under-pressure-today-701411',
+      date: '18.20.2021',
+      comment: undefined,
+    },
+    {
+      url: 'https://seekingalpha.com/article/4399470-barrick-gold-2020-gold-and-copper-production-analysis',
+      date: '21.01.2021',
+      comment: 'Sven Carlin - analysis',
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=tjvdpzTc0cU',
+      date: '11.11.2020',
+      comment: 'Cameron Stewart',
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=-ZlPKehzCJ0',
+      date: '15.09.2020',
+      comment: 'Sven Carlin',
+    },
   ];
 }
