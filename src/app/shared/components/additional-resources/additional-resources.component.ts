@@ -13,5 +13,5 @@ export interface AdditionalResource {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AdditionalResourcesComponent {
-  @Input() resources: AdditionalResource[];
+  @Input() data: AdditionalResource[];
 }

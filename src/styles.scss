@@ -7,4 +7,15 @@ body {
   a:visited {
     color: blue;
   }
+
+  .section-border {
+    border: 3px double #ccc;
+    padding: 6px;
+    margin: 6px;
+    border-radius: 8px;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
 }

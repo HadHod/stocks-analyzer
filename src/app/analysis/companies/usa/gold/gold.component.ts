@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ChartTooltipModel } from 'chart.js';
 import { AdditionalResource } from 'src/app/shared/components/additional-resources/additional-resources.component';
+import { BasicIndicators } from 'src/app/shared/components/basic-indicators/basic-indicators.component';
 
 @Component({
   templateUrl: './gold.component.html',
@@ -43,6 +44,18 @@ export class GoldComponent {
     { data: [2348, 5630, 6014, 7613, 8136, 11001, 14236, 14394, 12527, 10239, 9029, 8558, 8374, 7243, 9717, 12595], label: 'Revenue' },
     { data: [1150, 2920, 3016, 3907, 4329, 5839, 7996, 7137, 5198, 3409, 2122, 3153, 3074, 2023, 2806, 5178], label: 'Gross profit' },
   ];
+
+  public basicIndicators: BasicIndicators = {
+    pe: 14.28,
+    dy: '0.36 (1.93%)',
+    dpr: 23.66,
+    roa: 6.71,
+    roe: 11.75,
+    dte: 0.23,
+    estimatedPricesRange: '18.67 (min: 21 (+12.5%), avg: 32.11 (+72%), max: 40 (+114.2%))',
+    insiders: 'buying / selling',
+    numberOfSharesTrend: 'growing / decreasing',
+  };
 
   public additionalResources: AdditionalResource[] = [
     {

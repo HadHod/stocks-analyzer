@@ -1,7 +1,7 @@
-<div class="resources">
+<div class="resources section-border">
   <h3>Additional Resources</h3>
 
-  <div *ngFor="let r of resources" class="resources__resource">
+  <div *ngFor="let r of data" class="resources__resource">
     <a [href]="r.url" target="_blank">{{ r.url }}</a>
     <div>
       <span *ngIf="r.date" class="resources__resource__date">[{{ r.date }}]</span>

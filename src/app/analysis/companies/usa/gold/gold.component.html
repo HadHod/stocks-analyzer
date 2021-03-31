@@ -2,31 +2,25 @@
 
 <hr>
 
-<dl>
-  <dt>PE</dt>
-  <dd>14.28</dd>
-  <dt>Forward Dividend Yield</dt>
-  <dd>0.36 (1.93%)</dd>
-  <dt>DPR</dt>
-  <dd>23.66%</dd>
-  <dt>ROA</dt>
-  <dd>6.71%</dd>
-  <dt>ROE</dt>
-  <dd>11.75%</dd>
-  <dt>DTE</dt>
-  <dd>0.23</dd>
-  <dt>Estimated prices range</dt>
-  <dd>18.67 (min: 21 (+12.5%), avg: 32.11 (+72%), max: 40 (+114.2%))</dd>
-  <dt>insiders</dt>
-  <dd>buying / selling</dd>
-  <dt>no. shares</dt>
-  <dd>growing / decreasing</dd>
-  <dt>DESCRIPTION</dt>
-  <dd>Mining gold and copper in NA, SA, Arfica and Middle East. At least 40 years of mining of gold. Very volotile to gold price (kurs z wiekszym odchyleniem od ceny złota).
-    Revenue from 4Q2020
-    GOLD 1206 * $1700 = 2050200
-    COPPER 119000000 * $3.25 = 386750000</dd>
-</dl>
+<app-basic-indicators [data]="basicIndicators"></app-basic-indicators>
+
+<div class="section-border">
+  <h3>Description</h3>
+
+  <p>
+    Barrick Gold Corporation engages in the exploration, mine development, production, and sale of gold and copper properties. It has ownership interests in producing gold mines that are located in Argentina, Canada, Côte d'Ivoire, the Democratic Republic of Congo, Dominican Republic, Mali, Tanzania, and the United States. The company also has ownership interests in producing copper mines located in Chile, Saudi Arabia, and Zambia; and various other projects located throughout the Americas and Africa. Barrick Gold Corporation was founded in 1983 and is headquartered in Toronto, Canada.
+  </p>
+
+  <p>
+    Mining gold and copper in NA, SA, Arfica and Middle East. At least 40 years of mining of gold. Gold deposits till at least 2060. Very volotile to gold price (share price with greater deviation from the price of gold).
+  </p>
+
+  <p>
+    Revenue from 2020<br>
+    GOLD 85%<br>
+    COPPER 15%
+  </p>
+</div>
 
 <div style="display: block">
   <canvas baseChart
@@ -37,6 +31,12 @@
           [chartType]="barChartType">
   </canvas>
 </div>
+
+<img src="/assets/usa/gold/dy_in_time.png" />
+
+<p>
+  Most time Dividend Yield is below 1.3% but dividend amount is not stable enought.
+</p>
 
 <div style="display: block">
   <canvas baseChart
@@ -50,4 +50,4 @@
 
 <img src="/assets/usa/gold/38948546-1600159763931131.png" />
 
-<app-additional-resources [resources]="additionalResources"></app-additional-resources>
+<app-additional-resources [data]="additionalResources"></app-additional-resources>
