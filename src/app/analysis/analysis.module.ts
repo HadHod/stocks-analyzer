@@ -5,6 +5,7 @@ import { ComponentsListComponent } from './components-list/components-list.compo
 import { GoldComponent } from './companies/usa/gold/gold.component';
 import { ChartsModule } from 'ng2-charts';
 import { SharedModule } from '../shared/shared.module';
+import { CgnxComponent } from './companies/usa/cgnx/cgnx.component';
 
 const USA = [
   GoldComponent,
@@ -14,6 +15,7 @@ const USA = [
   declarations: [
     ComponentsListComponent,
     USA,
+    CgnxComponent,
   ],
   imports: [
     CommonModule,

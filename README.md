@@ -1,4 +1,4 @@
-# StocsAnalyzer
+# Stocs Analyzer
 
 ## TODO
 

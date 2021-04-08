@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ComponentsListComponent } from './components-list/components-list.component';
 import { GoldComponent } from './companies/usa/gold/gold.component';
+import { CgnxComponent } from './companies/usa/cgnx/cgnx.component';
 
 const countries: Routes = [
   { path: 'poland', component: ComponentsListComponent },
@@ -16,6 +17,7 @@ const poland: Routes = [
 
 const usa: Routes = [
   { path: 'usa/gold', component: GoldComponent },
+  { path: 'usa/cgnx', component: CgnxComponent },
 ];
 
 const germany: Routes = [
