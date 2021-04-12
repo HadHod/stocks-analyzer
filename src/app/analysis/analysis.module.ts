@@ -23,7 +23,6 @@ const USA = [
     CommonModule,
     SharedModule,
     AnalysisRoutingModule,
-    ChartsModule,
   ]
 })
 export class AnalysisModule { }

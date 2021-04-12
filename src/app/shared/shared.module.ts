@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AdditionalResourcesComponent } from './components/additional-resources/additional-resources.component';
 import { BasicIndicatorsComponent } from './components/basic-indicators/basic-indicators.component';
+import { DividendsComponent } from './components/dividends/dividends.component';
+import { ChartsModule } from 'ng2-charts';
 
 const MODULES = [
   CommonModule,
   FormsModule,
+  ChartsModule,
 ];
 
 const COMPONENTS = [
   AdditionalResourcesComponent,
   BasicIndicatorsComponent,
+  DividendsComponent,
 ];
 
 const DIRECTIVES = [];

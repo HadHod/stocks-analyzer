@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { ChartTooltipModel } from 'chart.js';
 import { AdditionalResource } from 'src/app/shared/components/additional-resources/additional-resources.component';
 import { BasicIndicators } from 'src/app/shared/components/basic-indicators/basic-indicators.component';
+import { Dividend } from 'src/app/shared/components/dividends/dividends.component';
 
 @Component({
   templateUrl: './gold.component.html',
@@ -9,26 +9,17 @@ import { BasicIndicators } from 'src/app/shared/components/basic-indicators/basi
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GoldComponent {
-  public barChartOptions = {
-    scaleShowVerticalLines: true,
-    responsive: true,
-    tooltips: {
-      custom: (tooltipModel: ChartTooltipModel) => {
-        tooltipModel.title = ['DGR2Y: 10%', 'DGR5Y: 10%'];
-        tooltipModel.height = 60;
-        tooltipModel.width = 82;
-      },
-    }
-  };
-
-  public barChartLabels = [
+  private years: string[] = [
     '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020',
   ];
-  public barChartType = 'bar';
-  public barChartLegend = false;
-  public barChartData = [
-    { data: [0.22, 0.22, 0.3, 0.04, 0.04, 0.26, 0.51, 0.21, 0.14, 0.2, 0.14, 0.08, 0.12, 0.19, 0.13, 0.31] },
+  private dividendsValues: number[] = [
+    0.22, 0.22, 0.3, 0.04, 0.04, 0.26, 0.51, 0.21, 0.14, 0.2, 0.14, 0.08, 0.12, 0.19, 0.13, 0.31,
   ];
+
+  public dividends: Dividend[] = this.years.map((y: string, i: number) => ({
+    year: y,
+    dividend: this.dividendsValues[i],
+  }));
 
   public barChartOptions2 = {
     scaleShowVerticalLines: false,

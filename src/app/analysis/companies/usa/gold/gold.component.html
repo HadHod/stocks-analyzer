@@ -22,15 +22,7 @@
   </p>
 </div>
 
-<div style="display: block">
-  <canvas baseChart
-          [datasets]="barChartData"
-          [labels]="barChartLabels"
-          [options]="barChartOptions"
-          [legend]="barChartLegend"
-          [chartType]="barChartType">
-  </canvas>
-</div>
+<app-dividends [data]="dividends"></app-dividends>
 
 <img src="/assets/usa/gold/dy_in_time.png" />
 
