@@ -5,6 +5,7 @@ import { AdditionalResourcesComponent } from './components/additional-resources/
 import { BasicIndicatorsComponent } from './components/basic-indicators/basic-indicators.component';
 import { DividendsComponent } from './components/dividends/dividends.component';
 import { ChartsModule } from 'ng2-charts';
+import { FinancialHistoryComponent } from './components/financial-history/financial-history.component';
 
 const MODULES = [
   CommonModule,
@@ -16,6 +17,7 @@ const COMPONENTS = [
   AdditionalResourcesComponent,
   BasicIndicatorsComponent,
   DividendsComponent,
+  FinancialHistoryComponent,
 ];
 
 const DIRECTIVES = [];

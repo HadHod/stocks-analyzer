@@ -2,6 +2,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AdditionalResource } from 'src/app/shared/components/additional-resources/additional-resources.component';
 import { BasicIndicators } from 'src/app/shared/components/basic-indicators/basic-indicators.component';
 import { Dividend } from 'src/app/shared/components/dividends/dividends.component';
+import { Financial } from 'src/app/shared/components/financial-history/financial-history.component';
 
 @Component({
   templateUrl: './gold.component.html',
@@ -21,21 +22,6 @@ export class GoldComponent {
     dividend: this.dividendsValues[i],
   }));
 
-  public barChartOptions2 = {
-    scaleShowVerticalLines: false,
-    responsive: true,
-  };
-
-  public barChartLabels2 = [
-    '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020',
-  ];
-  public barChartType2 = 'bar';
-  public barChartLegend2 = true;
-  public barChartData2 = [
-    { data: [2348, 5630, 6014, 7613, 8136, 11001, 14236, 14394, 12527, 10239, 9029, 8558, 8374, 7243, 9717, 12595], label: 'Revenue' },
-    { data: [1150, 2920, 3016, 3907, 4329, 5839, 7996, 7137, 5198, 3409, 2122, 3153, 3074, 2023, 2806, 5178], label: 'Gross profit' },
-  ];
-
   public basicIndicators: BasicIndicators = {
     pe: 14.28,
     dy: '0.36 (1.93%)',
@@ -47,6 +33,17 @@ export class GoldComponent {
     insiders: 'buying / selling',
     numberOfSharesTrend: 'growing / decreasing',
   };
+
+  private revenue: number[] = [2348, 5630, 6014, 7613, 8136, 11001, 14236, 14394, 12527, 10239, 9029, 8558, 8374, 7243, 9717, 12595];
+  private grossProfit: number[] = [1150, 2920, 3016, 3907, 4329, 5839, 7996, 7137, 5198, 3409, 2122, 3153, 3074, 2023, 2806, 5178];
+
+  public financials: Financial[] = this.years.map((y: string, i: number) => ({
+    year: y,
+    data: {
+      Revenue: this.revenue[i],
+      'Gross profit': this.grossProfit[i],
+    },
+  }));
 
   public additionalResources: AdditionalResource[] = [
     {

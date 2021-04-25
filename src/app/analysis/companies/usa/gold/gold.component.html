@@ -30,15 +30,7 @@
   Most time Dividend Yield is below 1.3% but dividend amount is not stable enought.
 </p>
 
-<div style="display: block">
-  <canvas baseChart
-          [datasets]="barChartData2"
-          [labels]="barChartLabels2"
-          [options]="barChartOptions2"
-          [legend]="barChartLegend2"
-          [chartType]="barChartType2">
-  </canvas>
-</div>
+<app-financial-history [data]="financials"></app-financial-history>
 
 <img src="/assets/usa/gold/38948546-1600159763931131.png" />
 
