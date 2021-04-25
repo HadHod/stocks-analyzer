@@ -4,6 +4,11 @@ import { ComponentsListComponent } from './components-list/components-list.compo
 import { GoldComponent } from './companies/usa/gold/gold.component';
 import { CgnxComponent } from './companies/usa/cgnx/cgnx.component';
 import { AbbvComponent } from './companies/usa/abbv/abbv.component';
+import { VzComponent } from './companies/usa/vz/vz.component';
+import { SccoComponent } from './companies/usa/scco/scco.component';
+import { AqnComponent } from './companies/usa/aqn/aqn.component';
+import { TrpComponent } from './companies/usa/trp/trp.component';
+import { KaluComponent } from './companies/usa/kalu/kalu.component';
 
 const countries: Routes = [
   { path: 'poland', component: ComponentsListComponent },
@@ -20,6 +25,11 @@ const usa: Routes = [
   { path: 'usa/gold', component: GoldComponent },
   { path: 'usa/cgnx', component: CgnxComponent },
   { path: 'usa/abbv', component: AbbvComponent },
+  { path: 'usa/vz', component: VzComponent },
+  { path: 'usa/scco', component: SccoComponent },
+  { path: 'usa/aqn', component: AqnComponent },
+  { path: 'usa/trp', component: TrpComponent },
+  { path: 'usa/kalu', component: KaluComponent },
 ];
 
 const germany: Routes = [

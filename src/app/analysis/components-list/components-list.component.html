@@ -3,7 +3,7 @@
 <ul>
   <li *ngFor="let c of campaniesList">
     <a [routerLink]="c.ticker.toLowerCase()">
-      [{{ c.lastUpdate }}] {{ c.name }} {{ c.exchange }}:{{ c.ticker }}
+      [{{ c.lastUpdate }}] {{ c.name }} ({{ c.exchange }}:{{ c.ticker }})
     </a>
   </li>
 </ul>

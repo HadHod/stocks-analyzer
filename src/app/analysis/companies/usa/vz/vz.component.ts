@@ -2,21 +2,17 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AdditionalResource } from 'src/app/shared/components/additional-resources/additional-resources.component';
 
 @Component({
-  templateUrl: './abbv.component.html',
-  styleUrls: ['./abbv.component.scss'],
+  selector: 'app-vz',
+  templateUrl: './vz.component.html',
+  styleUrls: ['./vz.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AbbvComponent {
+export class VzComponent {
 
   public additionalResources: AdditionalResource[] = [
     {
-      url: 'https://www.youtube.com/watch?v=kM2UT3W-GVk',
-      date: '11.04.2021',
-      comment: 'ppcian',
-    },
-    {
-      url: 'https://www.youtube.com/watch?v=xUZrvcsMlg4',
-      date: '10.02.2021',
+      url: 'https://www.youtube.com/watch?v=v3M94zLtaWk',
+      date: '17.02.2021',
       comment: 'Cameron Stewart',
     },
   ];
