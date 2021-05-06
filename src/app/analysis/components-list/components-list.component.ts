@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Company } from 'src/app/shared/models/company';
 
 const usa: Company[] = [
+  { name: 'The Kroger Co.', exchange: 'NYSE', ticker: 'KR', lastUpdate: '30.04.2021' },
   { name: 'Algonquin Power & Utilities Corp.', exchange: 'NYSE', ticker: 'AQN', lastUpdate: '28.04.2021' },
   { name: 'Kaiser Aluminum Corporation', exchange: 'NASDAQ', ticker: 'KALU', lastUpdate: '25.04.2021' },
   { name: 'TC Energy Corporation', exchange: 'NYSE', ticker: 'TRP', lastUpdate: '25.04.2021' },

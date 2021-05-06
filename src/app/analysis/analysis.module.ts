@@ -11,6 +11,7 @@ import { SccoComponent } from './companies/usa/scco/scco.component';
 import { AqnComponent } from './companies/usa/aqn/aqn.component';
 import { TrpComponent } from './companies/usa/trp/trp.component';
 import { KaluComponent } from './companies/usa/kalu/kalu.component';
+import { KrComponent } from './companies/usa/kr/kr.component';
 
 const USA = [
   GoldComponent,
@@ -21,6 +22,7 @@ const USA = [
   AqnComponent,
   TrpComponent,
   KaluComponent,
+  KrComponent,
 ];
 
 @NgModule({

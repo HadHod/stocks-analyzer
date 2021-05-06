@@ -9,6 +9,7 @@ import { SccoComponent } from './companies/usa/scco/scco.component';
 import { AqnComponent } from './companies/usa/aqn/aqn.component';
 import { TrpComponent } from './companies/usa/trp/trp.component';
 import { KaluComponent } from './companies/usa/kalu/kalu.component';
+import { KrComponent } from './companies/usa/kr/kr.component';
 
 const countries: Routes = [
   { path: 'poland', component: ComponentsListComponent },
@@ -30,6 +31,7 @@ const usa: Routes = [
   { path: 'usa/aqn', component: AqnComponent },
   { path: 'usa/trp', component: TrpComponent },
   { path: 'usa/kalu', component: KaluComponent },
+  { path: 'usa/kr', component: KrComponent },
 ];
 
 const germany: Routes = [
